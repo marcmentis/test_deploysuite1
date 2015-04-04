@@ -8,6 +8,7 @@ Bundler.require(:default, Rails.env)
 # Get CONFIG variables differentially in dev/test and production environments
 # if Rails.env == 'test'
     if Rails.env == 'development' || Rails.env == 'test'
+            CONFIG = {}
         # Create CONFIG[:foo] constants from application.yml file
             # CONFIG = YAML.load(File.read(File.expand_path('../application.yml', __FILE__)))
             # CONFIG.merge! CONFIG.fetch(Rails.env, {})
