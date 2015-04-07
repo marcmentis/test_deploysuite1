@@ -9,21 +9,21 @@ development:
   # pool: 5
   # timeout: 5000
 
-  # adapter: mysql2
-  # database: devdeploysuite
-  # username: root
-  # password:
-  # encoding: utf8
-  # pool: 5
-  # socket: /tmp/mysql.sock
+  adapter: mysql2
+  database: devdeploysuite
+  username: root
+  password:
+  encoding: utf8
+  pool: 5
+  socket: /tmp/mysql.sock
 
-  adapter: <%= CONFIG[:adapter1_mysql] %>
-  database: <%= CONFIG[:databaseB] %>
-  username: <%= CONFIG[:usernameB] %>
-  password: <%= CONFIG[:passwordB] %>
-  encoding: <%= CONFIG[:encodingB] %>
-  pool: <%= CONFIG[:poolB] %>
-  socket: <%= CONFIG[:socketB] %>
+  # adapter: <%= CONFIG[:adapter1_mysql] %>
+  # database: <%= CONFIG[:databaseB] %>
+  # username: <%= CONFIG[:usernameB] %>
+  # password: <%= CONFIG[:passwordB] %>
+  # encoding: <%= CONFIG[:encodingB] %>
+  # pool: <%= CONFIG[:poolB] %>
+  # socket: <%= CONFIG[:socketB] %>
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
